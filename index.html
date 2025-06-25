@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Каталог электроники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">TechStore</h1>
+            <p class="header__subtitle">Каталог электроники</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="filters">
+                <div class="filters__search">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Поиск товаров...">
+                </div>
+                
+                <div class="filters__category">
+                    <label for="categorySelect">Категория:</label>
+                    <select id="categorySelect" class="category-select">
+                        <option value="all">Все категории</option>
+                        <option value="smartphones">Смартфоны</option>
+                        <option value="laptops">Ноутбуки</option>
+                        <option value="headphones">Наушники</option>
+                    </select>
+                </div>
+                
+                <div class="filters__sort">
+                    <label for="sortSelect">Сортировка:</label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-asc">Цена: по возрастанию</option>
+                        <option value="price-desc">Цена: по убыванию</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="catalog">
+                <div id="productGrid" class="product-grid">
+                    <!-- Товары будут добавлены через JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2025 TechStore. Все права защищены.</p>
+            <p class="footer__contact">Телефон: +7 (999) 123-45-67 | Email: info@techstore.ru</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
